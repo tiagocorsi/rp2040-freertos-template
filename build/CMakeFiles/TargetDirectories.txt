@@ -1,7 +1,7 @@
-/home/tiago/brainsignal/rp2040-freertos-template/build/CMakeFiles/rp2040-freertos-template.dir
-/home/tiago/brainsignal/rp2040-freertos-template/build/CMakeFiles/ELF2UF2Build.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/CMakeFiles/edit_cache.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/CMakeFiles/rebuild_cache.dir
+/home/tiago/brainsignal/rp2040-freertos-template/build/FREERTOS_KERNEL/CMakeFiles/edit_cache.dir
+/home/tiago/brainsignal/rp2040-freertos-template/build/FREERTOS_KERNEL/CMakeFiles/rebuild_cache.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/CMakeFiles/edit_cache.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/CMakeFiles/rebuild_cache.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/tools/CMakeFiles/edit_cache.dir
@@ -167,3 +167,7 @@
 /home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/src/rp2040/hardware_structs/CMakeFiles/rebuild_cache.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
+/home/tiago/brainsignal/rp2040-freertos-template/build/src/CMakeFiles/rp2040-freertos-template.dir
+/home/tiago/brainsignal/rp2040-freertos-template/build/src/CMakeFiles/ELF2UF2Build.dir
+/home/tiago/brainsignal/rp2040-freertos-template/build/src/CMakeFiles/edit_cache.dir
+/home/tiago/brainsignal/rp2040-freertos-template/build/src/CMakeFiles/rebuild_cache.dir

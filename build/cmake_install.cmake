@@ -39,7 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/tiago/brainsignal/rp2040-freertos-template/build/FREERTOS_KERNEL/cmake_install.cmake")
   include("/home/tiago/brainsignal/rp2040-freertos-template/build/pico-sdk/cmake_install.cmake")
+  include("/home/tiago/brainsignal/rp2040-freertos-template/build/src/cmake_install.cmake")
 
 endif()
 

@@ -120,6 +120,9 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
+//Enable/Disable output of compile commands during generation.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/tiago/brainsignal/rp2040-freertos-template/build/CMakeFiles/pkgRedirects
 
@@ -241,6 +244,18 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 
 //Doxygen documentation generation tool (https://www.doxygen.nl)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+
+//Path to the FreeRTOS_KERNEL
+FREERTOS_KERNEL_PATH:PATH=/home/tiago/FreeRTOS-Kernel
+
+//Value Computed by CMake
+FreeRTOS-Kernel_BINARY_DIR:STATIC=/home/tiago/brainsignal/rp2040-freertos-template/build/FREERTOS_KERNEL
+
+//Value Computed by CMake
+FreeRTOS-Kernel_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FreeRTOS-Kernel_SOURCE_DIR:STATIC=/home/tiago/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2040
 
 //PICO target board (e.g. pico)
 PICO_BOARD:STRING=pico
@@ -408,6 +423,8 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
+CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -438,7 +455,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=81
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=83
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -494,7 +511,7 @@ PICO_BOOT_STAGE2_DIR:INTERNAL=/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/boo
 PICO_CMAKE_PRELOAD_PLATFORM_DIR:INTERNAL=/home/tiago/.pico-sdk/sdk/1.5.1/cmake/preload/platforms
 PICO_CMAKE_PRELOAD_PLATFORM_FILE:INTERNAL=/home/tiago/.pico-sdk/sdk/1.5.1/cmake/preload/platforms/rp2040.cmake
 PICO_COMPILER_ASM:INTERNAL=/home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/arm-none-eabi-gcc
-PICO_DOXYGEN_EXCLUDE_PATHS:INTERNAL= /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs
+PICO_DOXYGEN_EXCLUDE_PATHS:INTERNAL= /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/cmsis /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040/hardware_regs
 PICO_DOXYGEN_PATHS:INTERNAL= /home/tiago/.pico-sdk/sdk/1.5.1/src/common /home/tiago/.pico-sdk/sdk/1.5.1/lib/cyw43-driver/src /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common /home/tiago/.pico-sdk/sdk/1.5.1/src/rp2040
 PICO_NO_HARDWARE:INTERNAL=0
 PICO_ON_DEVICE:INTERNAL=1
