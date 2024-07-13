@@ -83,9 +83,9 @@ Discarded input sections
                 0x00000000       0xcb /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
  .ARM.attributes
                 0x00000000       0x1b /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
- .text          0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
- .data          0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
- .bss           0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+ .text          0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1510,9 +1510,9 @@ Discarded input sections
  .debug_frame   0x00000000      0x14c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
- .text          0x00000000        0x0 /tmp/ccSOXj1K.o
- .data          0x00000000        0x0 /tmp/ccSOXj1K.o
- .bss           0x00000000        0x0 /tmp/ccSOXj1K.o
+ .text          0x00000000        0x0 /tmp/cceqBFJa.o
+ .data          0x00000000        0x0 /tmp/cceqBFJa.o
+ .bss           0x00000000        0x0 /tmp/cceqBFJa.o
  .data          0x00000000        0x0 /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-malloc.o)
@@ -1831,7 +1831,7 @@ LOAD /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
 .boot2          0x10000000      0x100
                 0x10000000                        __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 /tmp/ccSOXj1K.o
+ .boot2         0x10000000      0x100 /tmp/cceqBFJa.o
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -1899,7 +1899,7 @@ LOAD /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
                 0x100002bc       0x28 /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .text.frame_dummy
                 0x100002e4       0x24 /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
- .text.main     0x10000308       0x1c CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+ .text.main     0x10000308       0x1c CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
                 0x10000308                main
  .text.gpio_set_function
                 0x10000324       0x30 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -2738,7 +2738,7 @@ LOAD /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
 .rodata         0x10007038     0x15d8
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x10007038      0xef5 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+                0x10007038      0xef5 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
                                   0xe (size before relaxing)
  .rodata.spin_lock_claim_unused.str1.4
                 0x10007f2d       0x1b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
@@ -3357,7 +3357,7 @@ LOAD /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2
                 0x20042000                        PROVIDE (__stack = __StackTop)
                 0x00000001                        ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed)
                 0x00000001                        ASSERT (((__binary_info_header_end - __logical_binary_start) <= 0x100), Binary info must be in first 256 bytes of the binary)
-LOAD CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+LOAD CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
 LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdlib/stdlib.c.obj
 LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
 LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
@@ -3427,7 +3427,7 @@ LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/
 LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-LOAD /tmp/ccSOXj1K.o
+LOAD /tmp/cceqBFJa.o
 LOAD /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -3452,7 +3452,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000001e       0x2c /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtbegin.o
  .ARM.attributes
-                0x0000004a       0x2c CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+                0x0000004a       0x2c CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
  .ARM.attributes
                 0x00000076       0x2c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .ARM.attributes
@@ -3546,7 +3546,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007ce       0x2c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x000007fa       0x22 /tmp/ccSOXj1K.o
+                0x000007fa       0x22 /tmp/cceqBFJa.o
  .ARM.attributes
                 0x0000081c       0x1e /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -3555,7 +3555,7 @@ LOAD linker stubs
                 0x00000866       0x2c /home/tiago/.pico-sdk/toolchain/13_2_Rel1/bin/../lib/gcc/arm-none-eabi/13.2.1/thumb/v6-m/nofp/crtend.o
 
 .comment        0x00000000       0x44
- .comment       0x00000000       0x44 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+ .comment       0x00000000       0x44 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
                                  0x45 (size before relaxing)
  .comment       0x00000044       0x45 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .comment       0x00000044       0x45 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
@@ -3594,105 +3594,105 @@ LOAD linker stubs
  .comment       0x00000044       0x45 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
  .comment       0x00000044       0x45 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.debug_info     0x00000000    0x24909
- .debug_info    0x00000000      0x10f CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
- .debug_info    0x0000010f     0x184b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x0000195a      0x1fb CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x00001b55      0x69a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x000021ef      0x5fa CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x000027e9     0x1c43 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x0000442c      0x1a3 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x000045cf     0x1d29 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
- .debug_info    0x000062f8      0x2cb CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
- .debug_info    0x000065c3     0x33f9 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
- .debug_info    0x000099bc     0x145b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000ae17      0xe82 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
- .debug_info    0x0000bc99      0xd98 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x0000ca31      0xfe7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x0000da18      0x505 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x0000df1d      0x4d8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x0000e3f5      0x1c7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x0000e5bc      0xf23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x0000f4df     0x19db CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00010eba       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00010edd      0x331 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x0001120e       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x00011231       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00011254      0x33b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x0001158f       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x000115b2       0x24 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x000115d6       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x000115f9      0x34f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x00011948       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x0001196b       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x0001198e       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x000119b1      0x2e2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x00011c93     0x1758 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x000133eb     0x1035 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_info    0x00014420      0x76e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_info    0x00014b8e     0x175e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_info    0x000162ec      0x5d6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_info    0x000168c2      0x281 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_info    0x00016b43     0x127a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
- .debug_info    0x00017dbd     0x20ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_info    0x00019e8b      0xfd0 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_info    0x0001ae5b     0x3a52 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
- .debug_info    0x0001e8ad      0x860 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_info    0x0001f10d     0x1b2a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_info    0x00020c37     0x14de CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
- .debug_info    0x00022115     0x27f4 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+.debug_info     0x00000000    0x24907
+ .debug_info    0x00000000      0x10d CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
+ .debug_info    0x0000010d     0x184b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x00001958      0x1fb CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x00001b53      0x69a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x000021ed      0x5fa CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x000027e7     0x1c43 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0000442a      0x1a3 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x000045cd     0x1d29 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x000062f6      0x2cb CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
+ .debug_info    0x000065c1     0x33f9 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+ .debug_info    0x000099ba     0x145b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000ae15      0xe82 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+ .debug_info    0x0000bc97      0xd98 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x0000ca2f      0xfe7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x0000da16      0x505 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x0000df1b      0x4d8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x0000e3f3      0x1c7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x0000e5ba      0xf23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x0000f4dd     0x19db CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x00010eb8       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x00010edb      0x331 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x0001120c       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x0001122f       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x00011252      0x33b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x0001158d       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x000115b0       0x24 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x000115d4       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x000115f7      0x34f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x00011946       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x00011969       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x0001198c       0x23 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x000119af      0x2e2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x00011c91     0x1758 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x000133e9     0x1035 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_info    0x0001441e      0x76e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_info    0x00014b8c     0x175e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_info    0x000162ea      0x5d6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_info    0x000168c0      0x281 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_info    0x00016b41     0x127a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_info    0x00017dbb     0x20ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_info    0x00019e89      0xfd0 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_info    0x0001ae59     0x3a52 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+ .debug_info    0x0001e8ab      0x860 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_info    0x0001f10b     0x1b2a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_info    0x00020c35     0x14de CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+ .debug_info    0x00022113     0x27f4 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.debug_abbrev   0x00000000     0x74ac
- .debug_abbrev  0x00000000       0xbc CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
- .debug_abbrev  0x000000bc      0x3a6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x00000462       0xf8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x0000055a      0x2ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000828      0x249 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000a71      0x500 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00000f71      0x116 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x00001087      0x3f1 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x00001478      0x1ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
- .debug_abbrev  0x00001646      0x5c3 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
- .debug_abbrev  0x00001c09      0x3d5 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x00001fde      0x290 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x0000226e      0x349 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
- .debug_abbrev  0x000025b7      0x434 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x000029eb      0x1e7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00002bd2      0x1a8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00002d7a      0x10c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00002e86      0x530 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x000033b6      0x371 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x00003727       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x00003739      0x167 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x000038a0       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x000038b2       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x000038c4      0x1c3 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x00003a87       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x00003a99       0x14 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_abbrev  0x00003aad       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x00003abf      0x1c6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00003c85       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x00003c97       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00003ca9       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00003cbb       0xb8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00003d73      0x47a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x000041ed      0x499 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_abbrev  0x00004686      0x2ca CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_abbrev  0x00004950      0x543 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_abbrev  0x00004e93      0x15a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_abbrev  0x00004fed      0x181 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_abbrev  0x0000516e      0x2bd CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
- .debug_abbrev  0x0000542b      0x563 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_abbrev  0x0000598e      0x449 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_abbrev  0x00005dd7      0x648 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
- .debug_abbrev  0x0000641f      0x2e8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_abbrev  0x00006707      0x4b9 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_abbrev  0x00006bc0      0x472 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
- .debug_abbrev  0x00007032      0x47a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+.debug_abbrev   0x00000000     0x74a4
+ .debug_abbrev  0x00000000       0xb4 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
+ .debug_abbrev  0x000000b4      0x3a6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x0000045a       0xf8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x00000552      0x2ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000820      0x249 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00000a69      0x500 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x00000f69      0x116 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x0000107f      0x3f1 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x00001470      0x1ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
+ .debug_abbrev  0x0000163e      0x5c3 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x00001c01      0x3d5 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x00001fd6      0x290 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x00002266      0x349 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_abbrev  0x000025af      0x434 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x000029e3      0x1e7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00002bca      0x1a8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00002d72      0x10c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x00002e7e      0x530 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x000033ae      0x371 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x0000371f       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003731      0x167 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x00003898       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x000038aa       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x000038bc      0x1c3 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x00003a7f       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003a91       0x14 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_abbrev  0x00003aa5       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x00003ab7      0x1c6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x00003c7d       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003c8f       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00003ca1       0x12 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00003cb3       0xb8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x00003d6b      0x47a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x000041e5      0x499 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_abbrev  0x0000467e      0x2ca CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_abbrev  0x00004948      0x543 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_abbrev  0x00004e8b      0x15a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_abbrev  0x00004fe5      0x181 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_abbrev  0x00005166      0x2bd CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_abbrev  0x00005423      0x563 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_abbrev  0x00005986      0x449 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_abbrev  0x00005dcf      0x648 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+ .debug_abbrev  0x00006417      0x2e8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_abbrev  0x000066ff      0x4b9 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_abbrev  0x00006bb8      0x472 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+ .debug_abbrev  0x0000702a      0x47a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 .debug_aranges  0x00000000     0x1678
  .debug_aranges
-                0x00000000       0x20 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+                0x00000000       0x20 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
  .debug_aranges
                 0x00000020      0x100 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_aranges
@@ -3787,7 +3787,7 @@ LOAD linker stubs
 .debug_rnglists
                 0x00000000     0x16d4
  .debug_rnglists
-                0x00000000       0x13 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+                0x00000000       0x13 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
  .debug_rnglists
                 0x00000013       0xec CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_rnglists
@@ -3875,105 +3875,105 @@ LOAD linker stubs
  .debug_rnglists
                 0x000014d0      0x204 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.debug_line     0x00000000    0x174de
- .debug_line    0x00000000      0x1e3 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
- .debug_line    0x000001e3      0xc07 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00000dea      0x287 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x00001071      0x48b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x000014fc      0x475 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00001971     0x1067 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x000029d8      0x238 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00002c10     0x10dc CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00003cec      0x2ca CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x00003fb6     0x19c2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
- .debug_line    0x00005978      0xc0b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00006583      0x818 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
- .debug_line    0x00006d9b      0x872 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x0000760d      0xa17 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00008024      0x509 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x0000852d      0x45e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000898b      0x2aa CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x00008c35      0xb00 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00009735     0x12ae CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000a9e3      0x11a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000aafd      0x275 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000ad72      0x2a9 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b01b      0x3fa CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000b415      0x3ac CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000b7c1      0x66c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000be2d       0x61 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000be8e      0x3b2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000c240      0x3a1 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000c5e1      0x198 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000c779       0x94 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000c80d       0xa5 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000c8b2      0x1ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000ca80      0xf32 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000d9b2      0xa30 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_line    0x0000e3e2      0x4ad CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x0000e88f      0xda4 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x0000f633      0x337 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x0000f96a      0x3ae CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x0000fd18      0x8b4 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x000105cc      0xf06 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x000114d2      0xab6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x00011f88     0x1eed CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00013e75      0x533 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x000143a8      0xd77 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x0001511f      0xbf8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x00015d17     0x17c7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+.debug_line     0x00000000    0x174d5
+ .debug_line    0x00000000      0x1da CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
+ .debug_line    0x000001da      0xc07 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00000de1      0x287 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x00001068      0x48b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x000014f3      0x475 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00001968     0x1067 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000029cf      0x238 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00002c07     0x10dc CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x00003ce3      0x2ca CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00003fad     0x19c2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+ .debug_line    0x0000596f      0xc0b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000657a      0x818 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00006d92      0x872 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x00007604      0xa17 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x0000801b      0x509 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00008524      0x45e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00008982      0x2aa CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00008c2c      0xb00 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x0000972c     0x12ae CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000a9da      0x11a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000aaf4      0x275 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000ad69      0x2a9 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b012      0x3fa CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000b40c      0x3ac CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000b7b8      0x66c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000be24       0x61 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000be85      0x3b2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000c237      0x3a1 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000c5d8      0x198 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000c770       0x94 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000c804       0xa5 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000c8a9      0x1ce CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000ca77      0xf32 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000d9a9      0xa30 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_line    0x0000e3d9      0x4ad CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x0000e886      0xda4 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x0000f62a      0x337 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x0000f961      0x3ae CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x0000fd0f      0x8b4 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x000105c3      0xf06 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x000114c9      0xab6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x00011f7f     0x1eed CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x00013e6c      0x533 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x0001439f      0xd77 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x00015116      0xbf8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00015d0e     0x17c7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 
-.debug_str      0x00000000     0x7494
- .debug_str     0x00000000     0x7494 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
-                                0x1ee (size before relaxing)
- .debug_str     0x00007494      0xa0f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_str     0x00007494      0x236 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
- .debug_str     0x00007494      0x37a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
- .debug_str     0x00007494      0x361 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
- .debug_str     0x00007494      0x82f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
- .debug_str     0x00007494      0x217 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
- .debug_str     0x00007494      0x609 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
- .debug_str     0x00007494      0x2d7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
- .debug_str     0x00007494      0xc8c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
- .debug_str     0x00007494      0x741 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
- .debug_str     0x00007494      0x407 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
- .debug_str     0x00007494      0x63a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
- .debug_str     0x00007494      0x6de CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_str     0x00007494      0x2f2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
- .debug_str     0x00007494      0x338 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_str     0x00007494      0x235 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_str     0x00007494      0x7f8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_str     0x00007494      0x496 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
- .debug_str     0x00007494       0x91 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_str     0x00007494      0x28d CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_str     0x00007494       0x8b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
- .debug_str     0x00007494       0x8f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_str     0x00007494      0x2d6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_str     0x00007494       0x95 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_str     0x00007494       0x9a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_str     0x00007494       0x8d CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_str     0x00007494      0x2d2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_str     0x00007494       0x93 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_str     0x00007494       0x91 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_str     0x00007494       0x8e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_str     0x00007494      0x432 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_str     0x00007494      0x9f2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_str     0x00007494      0x8ff CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_str     0x00007494      0x77c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_str     0x00007494      0xb35 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_str     0x00007494      0xe6c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_str     0x00007494      0x289 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_str     0x00007494      0x629 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
- .debug_str     0x00007494      0xedb CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_str     0x00007494      0x82e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_str     0x00007494     0x1754 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
- .debug_str     0x00007494      0x538 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_str     0x00007494     0x152d CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_str     0x00007494      0xadf CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
- .debug_str     0x00007494      0x768 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
+.debug_str      0x00000000     0x7557
+ .debug_str     0x00000000     0x7557 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
+                                0x220 (size before relaxing)
+ .debug_str     0x00007557      0xa0f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_str     0x00007557      0x236 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x00007557      0x37a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x00007557      0x361 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x00007557      0x82f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x00007557      0x217 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x00007557      0x609 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x00007557      0x2d7 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_sync/critical_section.c.obj
+ .debug_str     0x00007557      0xc8c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_time/time.c.obj
+ .debug_str     0x00007557      0x741 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x00007557      0x407 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/common/pico_util/pheap.c.obj
+ .debug_str     0x00007557      0x63a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x00007557      0x6de CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x00007557      0x2f2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x00007557      0x338 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x00007557      0x235 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x00007557      0x7f8 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x00007557      0x496 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x00007557       0x91 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x00007557      0x28d CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x00007557       0x8b CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x00007557       0x8f CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x00007557      0x2d6 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x00007557       0x95 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x00007557       0x9a CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_str     0x00007557       0x8d CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x00007557      0x2d2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x00007557       0x93 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x00007557       0x91 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x00007557       0x8e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x00007557      0x432 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x00007557      0x9f2 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x00007557      0x8ff CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_str     0x00007557      0x77c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_str     0x00007557      0xb35 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_str     0x00007557      0xe6c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_str     0x00007557      0x289 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_str     0x00007557      0x629 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_str     0x00007557      0xedb CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_str     0x00007557      0x82e CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_str     0x00007557     0x1754 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd.c.obj
+ .debug_str     0x00007557      0x538 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_str     0x00007557     0x152d CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_str     0x00007557      0xadf CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/tusb.c.obj
+ .debug_str     0x00007557      0x768 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 .debug_frame    0x00000000     0x3004
- .debug_frame   0x00000000       0x28 CMakeFiles/rp2040-freertos-template.dir/rp2040-freertos-template.c.obj
+ .debug_frame   0x00000000       0x28 CMakeFiles/rp2040-freertos-template.dir/main.cpp.obj
  .debug_frame   0x00000028      0x278 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_frame   0x000002a0       0x38 CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/pico_platform/platform.c.obj
  .debug_frame   0x000002d8       0x9c CMakeFiles/rp2040-freertos-template.dir/home/tiago/.pico-sdk/sdk/1.5.1/src/rp2_common/hardware_claim/claim.c.obj

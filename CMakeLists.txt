@@ -39,7 +39,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(rp2040-freertos-template rp2040-freertos-template.c )
+add_executable(rp2040-freertos-template main.cpp)
 
 pico_set_program_name(rp2040-freertos-template "rp2040-freertos-template")
 pico_set_program_version(rp2040-freertos-template "0.1")
